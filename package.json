@@ -33,4 +33,10 @@
     "typescript": "^7.0.2",
     "@types/express": "^4.17.21"
   }
+  "config": {
+  "npm-force-resolutions": {
+    "esbuild": "0.28.2"
+  }
+}
+}
 }
