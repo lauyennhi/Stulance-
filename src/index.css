@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-body: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+    
+    --color-bg: #F5F9FF;
+    --color-card: #FFFFFF;
+    --color-primary-pastel: #A9CFFA;
+    --color-primary-accent: #3D7DD8;
+    --color-text-main: #16243D;
+    --color-text-sub: #5B6B85;
+    --color-border: #DCE8F8;
+    
+    --color-accent-butter: #FFE9A8;
+    --color-accent-peach: #FFD6CC;
+    --color-accent-mint: #CDEFE0;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: #F5F9FF;
+    color: #16243D;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: var(--font-heading);
+    letter-spacing: -0.03em;
+  }
+
+  .font-numbers {
+    font-family: var(--font-heading);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom utility styles matching Stulance specifications */
+.stulance-card {
+  background-color: #FFFFFF;
+  border: 1px solid #DCE8F8;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px -2px rgba(22, 36, 61, 0.03);
+}
+
+.stulance-card-hover {
+  transition: transform 180ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.stulance-card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px -4px rgba(22, 36, 61, 0.08);
+}

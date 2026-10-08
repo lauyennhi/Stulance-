@@ -1,0 +1,6 @@
+{
+  "name": "Stulance - Tuyển dụng bằng nhiệm vụ thật",
+  "description": "Cổng kết nối việc làm sinh viên - Đừng nộp CV. Hãy nộp bài làm. Doanh nghiệp tuyển chọn qua nhiệm vụ thực tế.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
